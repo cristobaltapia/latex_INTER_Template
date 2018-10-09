@@ -82,7 +82,10 @@
 
 % Set math-font if unicode-math is used
 \ifunicodemath%
-  \setmathfont{latinmodern-math.otf}% for the symbols
+  \setmathfont[
+    Path=fonts/,
+    Extension=.otf,
+  ]{latinmodern-math}% for the symbols
   \setmathfont[range=\mathup/{num,latin,Latin,greek,Greek}]{Calibri Light}%
   \setmathfont[range=\mathbfup/{num,latin,Latin,greek,Greek}]{Calibri}%
   \setmathfont[range=\mathit/{num,latin,Latin,greek,Greek}]{Calibri Light Italic}%
