@@ -1,3 +1,4 @@
+% ! TEX TS-program = lualatex
 % Template for an INTER paper
 % To be compiled using lualatex + biber
 %
@@ -101,12 +102,11 @@ The caption should be put before the table.
 To insert table-notes, use the package \texttt{threeparttable}.
 
 \begin{table}[htb]
-  \flushleft%
   \small
   \caption{Requirements to sound insulation.}%
   \label{tab:table1}
   \begin{threeparttable}
-    \begin{tabular}{cccccc}\toprule
+    \begin{tabular}{lccccc}\toprule
       & Denmark     & Finland & Norway & Sweden & Estonia \\\midrule
       Airborne & \SI{55}{dB}\tnote{*} &         &        &        &         \\
       Impact   &             &         &        &        &         \\\bottomrule
