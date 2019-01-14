@@ -39,6 +39,7 @@
   maxbibnames=9,
   mincitenames=1,
 ]{biblatex}
+\RequirePackage{microtype}
 \RequirePackage{lmodern}
 \RequirePackage{listings}
 \RequirePackage[fleqn]{amsmath}
