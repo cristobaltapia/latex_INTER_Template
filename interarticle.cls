@@ -60,7 +60,7 @@
 \RequirePackage{ragged2e}
 \RequirePackage{siunitx}
 \RequirePackage{threeparttable}
-\RequirePackage[hidelinks=true]{hyperref}
+\RequirePackage[hidelinks]{hyperref}
 % \RequirePackage{fancyhdr}
 
 % Use unicode-math if requested
