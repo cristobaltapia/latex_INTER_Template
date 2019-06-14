@@ -60,6 +60,7 @@
 \RequirePackage{ragged2e}
 \RequirePackage{siunitx}
 \RequirePackage{threeparttable}
+\RequirePackage[hidelinks=true]{hyperref}
 % \RequirePackage{fancyhdr}
 
 % Use unicode-math if requested
@@ -244,14 +245,14 @@
 \DeclareCiteCommand{\citet}{\usebibmacro{prenote}}%
 {{\ifentrytype{misc}{}{\itshape}\printnames{labelname}}%
   \setunit{\addspace} % space delimiter
-(\setunit{\unspace}\printfield{year})}
+(\setunit{\unspace}\printfield[bibhyperref]{year})}
 {\multicitedelim}%
 {\usebibmacro{postnote}}
 
 \DeclareCiteCommand{\citep}{(\usebibmacro{prenote}}%
   {{\ifentrytype{misc}{}{\itshape}\printnames{labelname}}%
     \setunit{\addcomma\addspace}% comma delimiter
-  \printfield{year}}
+  \printfield[bibhyperref]{year}}
   {\multicitedelim}%
 {\usebibmacro{postnote})}
 
