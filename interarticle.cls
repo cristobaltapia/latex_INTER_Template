@@ -20,9 +20,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Class options
 \newif\ifunicodemath
+\newif\ifmicrotype
+\microtypefalse
 %
 \DeclareOption{unicode-math}{\unicodemathtrue}
 \DeclareOption{no-unicode-math}{\unicodemathfalse}
+\DeclareOption{microtype}{\microtypetrue}
 \ProcessOptions\relax
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -39,7 +42,6 @@
   maxbibnames=9,
   mincitenames=1,
 ]{biblatex}
-\RequirePackage{microtype}
 \RequirePackage{lmodern}
 \RequirePackage{listings}
 \RequirePackage[fleqn]{amsmath}
@@ -62,6 +64,12 @@
 \RequirePackage{threeparttable}
 \RequirePackage[hidelinks]{hyperref}
 % \RequirePackage{fancyhdr}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Activate microtype if desired
+\ifmicrotype%
+  \RequirePackage{microtype}
+\fi
 
 % Use unicode-math if requested
 \ifunicodemath%

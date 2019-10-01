@@ -4,8 +4,20 @@
 %
 % Author: Cristóbal Tapia Camú
 % E-Mail: cristobal.tapia-camu@mpa.uni-stuttgart.de
+% Package options:
+% - unicode-math: use the package unicode-math to render math
+% - nounicode-math: deactivate the package unicode-math to render math
+% - microtype: use the microtype pacakge to improve overall appearence
+%              (Note: If you decide to use microtype beware that some special
+%               attention has to be taken to some symbols, e.g. --- (emdash)
+%               or -- (endash).
 %
-\documentclass[unicode-math]{interarticle}
+%               - To write an emdash (---) with microtype use: \textemdash{}
+%               - To write an endash (--) with microtype use: \textendash{}
+%
+%               Otherwise, everything should work normally.)
+%
+\documentclass[unicode-math,microtype]{interarticle}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage{lipsum}
