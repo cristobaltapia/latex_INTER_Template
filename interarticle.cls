@@ -41,6 +41,7 @@
   maxcitenames=2,
   maxbibnames=9,
   mincitenames=1,
+  uniquelist=minyear,
 ]{biblatex}
 \RequirePackage{lmodern}
 \RequirePackage{listings}
