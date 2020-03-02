@@ -38,10 +38,11 @@
   style=authoryear,
   backend=biber,
   natbib=true,
-  maxcitenames=2,
   maxbibnames=9,
   mincitenames=1,
-  uniquelist=minyear,
+  maxcitenames=2,
+  firstinits=true,
+  uniquelist=minyear
 ]{biblatex}
 \RequirePackage{lmodern}
 \RequirePackage{listings}
